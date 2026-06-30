@@ -43,6 +43,6 @@ yarn-error.*
 .history/
 .vscode/
 .claude/
-LICENSE/
-CLAUDE.md/
-AGENTS.md/
+LICENSE
+CLAUDE.md
+AGENTS.md
