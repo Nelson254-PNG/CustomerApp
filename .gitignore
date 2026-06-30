@@ -40,9 +40,9 @@ yarn-error.*
 /ios
 /android
 /clients.ts
-/.history
-/.vscode
-/.claude
-/LICENSE
-/CLAUDE.md
-/AGENTS.md
+.history/
+.vscode/
+.claude/
+LICENSE/
+CLAUDE.md/
+AGENTS.md/
