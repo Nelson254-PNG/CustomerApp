@@ -40,7 +40,7 @@ yarn-error.*
 /ios
 /android
 /clients.ts
-.history/
+/.history
 .vscode/
 .claude/
 LICENSE
