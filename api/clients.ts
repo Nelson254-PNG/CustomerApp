@@ -125,3 +125,28 @@ export function payByTill(
     token,
   });
 }
+
+//stk push
+export function initiateStkPush(
+  token: string,
+  myId: string,
+  billId: string,
+  phone: string,
+  amount: number
+){
+  return apiRequest<{status: String; checkoutRequestId: String; Message: string}>(
+    `/customers/${myId}/payments/stk-push`,
+    { method: "POST", body: { billId, phone, amount }, token }
+  );
+}
+
+export function checkStkStatus(
+  token: string,
+  myId: string,
+  checkoutRequestId: string
+){
+  return apiRequest<{status: String; amount: number}>(
+    `/customers/${myId}/payments/stk-status/${checkoutRequestId}`,
+    {token} 
+  );
+}
